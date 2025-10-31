@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "复制工具",
+    "version": "0.9.9",
+    "description": "支持多级命名撤销的缩写快速复制工具，刷新后保留设置",
+    "permissions": ["storage", "activeTab"],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://agi-eval.cn/*",
+                "https://mate-label.appendata.com/#/*",
+                "https://mate-label.appendata.com/*"
+            ],
+            "js": ["content.js"],
+            "css": [],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}
+    
